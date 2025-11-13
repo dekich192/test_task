@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import Depends, FastAPI
 from app.api import auth, access_control, business_logic
 from app.core.database import engine, Base
 from app.config.settings import get_settings

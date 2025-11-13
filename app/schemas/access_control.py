@@ -40,3 +40,8 @@ class BusinessElement(BusinessElementBase):
 
     class Config:
         from_attributes = True
+
+
+class RolePermissionRequest(BaseModel):
+    permission_name: str
+    element_name: str
